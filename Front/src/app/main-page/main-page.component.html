@@ -1,0 +1,13 @@
+<div class="jumbotron">
+  <p>Username</p>
+  <form class="form-inline">
+    <input type="text" class="form-control" id="userName" aria-describedby="userLabel" name="user" [(ngModel)]="this.userName">
+    <input type="password" class="form-control" id="password" aria-describedby="passwordLabel" name="password" [(ngModel)]="this.userPassword">
+    <div class="btn-group" role="group" aria-label="Edit group" >
+      <button type="button" class="btn btn-danger" (click)="onRegister(userName, userPassword)">Register</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Edit group" >
+      <button type="button" class="btn btn-danger" (click)="loginUser(userName, userPassword)">Log in</button>
+    </div>
+  </form>
+</div>
